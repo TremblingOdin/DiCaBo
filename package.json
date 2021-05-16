@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/TremblingOdin/DiCaBo/issues"
   },
-  "homepage": "https://github.com/TremblingOdin/DiCaBo#readme"
+  "homepage": "https://github.com/TremblingOdin/DiCaBo#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  }
 }
