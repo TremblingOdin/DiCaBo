@@ -18,7 +18,9 @@
   "homepage": "https://github.com/TremblingOdin/DiCaBo#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
-    "dotenv": "^9.0.2"
+    "dotenv": "^9.0.2",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.6.6"
   },
   "devDependencies": {
     "eslint": "^7.26.0"
