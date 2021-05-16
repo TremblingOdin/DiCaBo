@@ -1,0 +1,19 @@
+{
+  "name": "dicabo",
+  "version": "1.0.0",
+  "description": "Discord Calendar Bot made in 2 days as part of a jam",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TremblingOdin/DiCaBo.git"
+  },
+  "author": "Kayvan Ehteshami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TremblingOdin/DiCaBo/issues"
+  },
+  "homepage": "https://github.com/TremblingOdin/DiCaBo#readme"
+}
