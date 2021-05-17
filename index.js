@@ -7,22 +7,20 @@ const prefix = config.prefix;
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const { MongoClient } = require("mongodb");
-const uri = config.mongodb_uri;
-const client = new MongoClient(uri);
+const calendar = require('./calendar.js');
 
 client.once('ready', () => {
-	message.channel.send('DiCaBo online and listening');
+	console.log("Online and running");
 });
 
 
 client.on('message', message => {
-	if(!message.content.startsWith(`${prefix}`) return;
+	if(!message.content.startsWith(`${prefix}`)) return;
 	
 	const args = message.content.slice(prefix.length).trim().split(' ');
 	const command = args.shift().toLowerCase();
 
-	if(mesage.author.bot) {
+	if(message.author.bot) {
 		for (let j = 0; j < 20; j++) {
 			message.channel.send("No no no no no no no");
 		}
@@ -41,7 +39,7 @@ client.on('message', message => {
 			message.channel.send();
 			break;
 		default:
-			`I did not understand that message ${message.author.username}. Perhaps you should actually read my manual`;
+			message.channel.send(`I did not understand that message ${message.author.username}. Perhaps you should actually read my manual`);
 			break;
 	}
 });
